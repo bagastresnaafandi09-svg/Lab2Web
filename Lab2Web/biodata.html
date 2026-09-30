@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyek Mini - Biodata Mahasiswa</title>
+</head>
+<body>
+
+    <header>
+        <h1>Profil & Biodata Mahasiswa</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Beranda</a> | 
+        <a href="#biodata">Lihat Biodata</a> | 
+        <a href="#form">Update Biodata</a>
+    </nav>
+
+    <main>
+        <!-- Ringkasan Biodata dalam bentuk Tabel -->
+        <section id="biodata">
+            <h2>Data Pribadi</h2>
+            <table border="1">
+                <tr>
+                    <th>Atribut</th>
+                    <th>Keterangan</th>
+                </tr>
+                <tr>
+                    <td>NIM</td>
+                    <td>312510486</td>
+                </tr>
+                <tr>
+                    <td>Nama Lengkap</td>
+                    <td>Bagas Tresna Afandi</td>
+                </tr>
+                <tr>
+                    <td>Program Studi</td>
+                    <td>Teknik Informatika</td>
+                </tr>
+            </table>
+        </section>
+
+        <br>
+
+        <!-- Multimedia Profile -->
+        <section>
+            <h2>Perkenalan Suara</h2>
+            <audio controls>
+                <source src="media/audio.mp3" type="audio/mpeg">
+                Browser tidak mendukung audio.
+            </audio>
+        </section>
+
+        <br>
+
+        <!-- Form Pengisian Biodata -->
+        <section id="form">
+            <h2>Form Perubahan Biodata</h2>
+            <form action="#" method="post">
+                <p>
+                    <label for="nama">Nama Lengkap:</label><br>
+                    <input type="text" id="nama" name="nama" required minlength="3">
+                </p>
+
+                <p>
+                    <label for="email">Email Resume:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </p>
+
+                <p>
+                    <label for="prodi">Program Studi:</label><br>
+                    <select id="prodi" name="prodi" required>
+                        <option value="">-- Pilih --</option>
+                        <option value="ti">Teknik Informatika</option>
+                        <option value="si">Sistem Informasi</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="alamat">Alamat Tinggal:</label><br>
+                    <textarea id="alamat" name="alamat" rows="4" cols="30" required></textarea>
+                </p>
+
+                <p>
+                    <button type="submit">Simpan Biodata</button>
+                    <button type="reset">Reset</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Teknik Informatika - Universitas Pelita Bangsa</p>
+    </footer>
+
+</body>
+</html>
